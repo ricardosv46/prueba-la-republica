@@ -1,0 +1,25 @@
+.box {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.ver {
+	margin-top: 2rem;
+	border: none;
+	background-color: transparent;
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.2;
+	cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+	.box {
+		flex-direction: column;
+		gap: 3rem;
+	}
+	.ver {
+		margin: 1rem 0;
+	}
+}
