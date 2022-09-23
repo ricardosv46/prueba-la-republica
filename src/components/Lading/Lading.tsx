@@ -6,18 +6,16 @@ import data from '../../data/data.json'
 import CardBlogs from '@components/CardBlogs/CardBlogs'
 
 const Lading = () => {
-	console.log('Lading', data.data[0].data)
-
-	return (
-		<>
-			<div className={styles.box}>
-				<Cardprincipal data={data.data[0].data[0]} />
-				<CardSmall data={data.data[0].data} />
-			</div>
-			<CardBlogs data={data.data[0].data} />
-			<button className={styles.ver}>Ver más noticias</button>
-		</>
-	)
+  return (
+    <>
+      <div className={styles.box}>
+        <Cardprincipal data={data.data[0].data[0]} />
+        <CardSmall data={data.data[0].data} />
+      </div>
+      <CardBlogs data={data.data[0].data} />
+      <button className={styles.ver}>Ver más noticias</button>
+    </>
+  )
 }
 
 export default Lading

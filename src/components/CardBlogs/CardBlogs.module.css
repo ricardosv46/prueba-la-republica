@@ -1,58 +1,58 @@
 .card {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	margin-top: 2rem;
-	border-top: 1px solid #808080;
-	gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 2rem;
+  border-top: 1px solid #808080;
+  gap: 2rem;
 }
 
 .text {
-	margin-top: 1rem;
-	font-size: 1.6rem;
-	font-weight: 500;
-	line-height: 1.2;
-	cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
 }
 
 .image:hover {
-	cursor: pointer;
-	opacity: 50%;
-	transition: all;
-	transition-duration: 0.3s;
+  cursor: pointer;
+  opacity: 50%;
+  transition: all;
+  transition-duration: 0.3s;
 }
 
 .text__small {
-	font-weight: 500;
-	font-size: 1.4rem;
-	color: #808080;
-	line-height: 2;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #808080;
+  line-height: 2;
 }
 
 .box__text__small {
-	display: flex;
-	flex: 1;
-	align-items: flex-end;
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
 }
 
 .box__item {
-	display: flex;
+  display: flex;
 
-	flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 1000px) {
-	.card {
-		grid-template-columns: repeat(3, 1fr);
-	}
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 765px) {
-	.card {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-	}
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-	.card :nth-child(5n) {
-		display: none;
-	}
+  .card :nth-child(5n) {
+    display: none;
+  }
 }
