@@ -12,7 +12,7 @@ const Cardprincipal = ({ data }: PropsCardprincipal) => {
     <div className={styles.card}>
       <div className={styles.image__container}>
         <Link href={data.fields[3].value} passHref>
-          <div>
+          <div style={{ display: 'flex' }}>
             <Image width={1240} height={730} src={data.fields[4].value.url} className={styles.image} alt='image' priority />
           </div>
         </Link>
